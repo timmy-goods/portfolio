@@ -87,6 +87,98 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* GENERAL STYLES */
+
+html {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+body {
+	color: #272726;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	text-align: left;
+}
+
+h1 {
+	font-family: 'Lora', serif;
+	font-size: 1.875em;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+h3 
+h4 {
+	font-size: 1.125em;
+	font-weight: 600;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight:500
+}
+
+p {
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.285;
+}
+
+a {
+	color: #5ca079;
+	text-decoration: none;
+}
+
+i {
+	font-size: 2.5em
+}
+img {
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
+.content-wrapper{
+	width: 90%;
+	margin: 50px 0; 
+}
+
+/* -------------------- Left-section Styles -------------------- */
+
+header {
+	background-color: #202322;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+
+
+.headshot img {
+	border-radius: 50%;
+	width: 60%;
+	height: auto;
+}
+
+header .headshot,
+header .name,
+header .title,
+header .button,
+header .social-icons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
