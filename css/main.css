@@ -112,7 +112,7 @@ h2 {
 	font-weight: 400;
 }
 
-h3 
+h3, 
 h4 {
 	font-size: 1.125em;
 	font-weight: 600;
@@ -137,6 +137,7 @@ a {
 i {
 	font-size: 2.5em
 }
+
 img {
 	width: 100%;
 }
@@ -145,40 +146,89 @@ figure {
 	margin: 0;
 }
 
-.content-wrapper{
-	width: 90%;
-	margin: 50px 0; 
-}
+
 
 /* -------------------- Left-section Styles -------------------- */
 
-header {
-	background-color: #202322;
-	color: #ffffff;
+.main-menu {
+	background-color: #f0f0f0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
 }
 
+.main-menu .headshot,
+.main-menu .name,
+.main-menu .title,
+.main-menu .button,
+.main-menu .social-icons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+	flex-basis: 80%;
+}
 
+.main-menu .logo {
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 100%;
+	margin: 25px 0 40px 20px;
+}
 
 .headshot img {
 	border-radius: 50%;
 	width: 60%;
 	height: auto;
+	margin-bottom: 40px;
 }
 
-header .headshot,
-header .name,
-header .title,
-header .button,
-header .social-icons {
+.main-menu .about {
+	margin: 10px 20px 40px;
+}
+
+.main-menu .social-icons {
+	margin-bottom: 25px;
+}
+
+.say-hello[type=button] {
+  width: 45%;
+  margin-bottom: 25px;
+  padding: 20px 0;
+  background-color: #5ca079;
+  font-weight: 500;
+  font-size: 1.125em;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+
+/* -------------------- Right-section Styles -------------------- */
+
+.portfolio-item  {
+	background-color: #5ca079;
+	border-top: thin solid #272726;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	flex-basis: 80%;
 }
+
+.portfolio-item figure {
+	margin: 50px;
+}
+
+.portfolio-item .description {
+	margin: 0 0 10px 50px;
+}
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -267,15 +317,94 @@ header .social-icons {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 786px) {
   /* Style adjustments for viewports that meet the condition */
+
+	/* ------ General Styles ----- */
+	
+	h1 {
+		font-size: 1.875em;
+	}
+
+	h2 {
+		font-size: 1.75em;
+	}
+
+	h3 {
+		font-size: 1.125em;
+	}
+	
+	h4 {
+		font-size: 1.25em;
+	}
+
+	h5 {
+		font-size: 1.125em;
+	}
+
+	p {
+		font-size: 1.125em;
+	
+	}
+
+	i {
+		font-size: 2.75em
+	}
+	
+	/* ------ Formating Styles ----- */	
+	
+	.main-menu {
+		height: 100%;
+		width: 33%;
+		position: fixed;
+		z-index: 1; 
+		top: 0;
+		left: 0;
+		overflow-x: hidden;
+	}
+	
+	main {
+		margin-left: 33%;
+	}
+	
+	.portfolio-item {
+		border-left: thin solid #272726;
+		
+	}
+	
+	.border-top {
+		border-top: none;
+	}
+	
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+@media only screen and (min-width: 1200px) {
+  /* Style adjustments for viewports that meet the condition */
+	
+		/* ------ General Styles ----- */
+	
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 2.25em;
+	}
+
+	h3, 
+	h4 {
+		font-size: 1.5em;
+	}
+
+	h5 {
+		font-size: 1.25em;
+	}
+
+	i {
+		font-size: 3em
+	}
+	
 }
 
 /* ==========================================================================
