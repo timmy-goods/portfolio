@@ -87,6 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
 /* GENERAL STYLES */
 
 html {
@@ -146,6 +147,7 @@ figure {
 	margin: 0;
 }
 
+/* ================= Home Page =================*/
 
 
 /* -------------------- Left-section Styles -------------------- */
@@ -320,6 +322,8 @@ figure {
 @media only screen and (min-width: 786px) {
   /* Style adjustments for viewports that meet the condition */
 
+/* ================= Home Page =================*/
+	
 	/* ------ General Styles ----- */
 	
 	h1 {
@@ -363,7 +367,7 @@ figure {
 		overflow-x: hidden;
 	}
 	
-	main {
+	.home-main {
 		margin-left: 33%;
 	}
 	
