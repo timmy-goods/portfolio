@@ -163,7 +163,7 @@ figure {
 .main-menu .headshot,
 .main-menu .name,
 .main-menu .title,
-.main-menu .button,
+.main-menu .email-button,
 .main-menu .social-icons {
 	display: flex;
 	justify-content: space-around;
@@ -228,8 +228,63 @@ figure {
 	margin: 0 0 10px 50px;
 }
 
+/* ================= Unplugged Page =================*/
 
 
+.portfolio-page {
+	background-color: #f0f0f0
+}
+
+/* -------------------- Header Styles -------------------- */
+
+.unplugged-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: row wrap;
+	margin: 25px 0 25px 50px;
+}
+
+.unplugged-header .content-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+
+/* -------------------- Unplugged Article Styles -------------------- */
+
+
+.info {
+	margin: 0 50px;
+}
+
+#unplugged figure {
+	margin: 50px 20%;
+	
+}
+
+.nav-button {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+	margin: 25px 0 50px 0;
+}
+
+.navigate[type=button] {
+  width: 17%;
+  padding: 20px 10px;
+  background-color: #5ca079;
+  font-weight: 500;
+  font-size: 1.125em;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -378,6 +433,16 @@ figure {
 	
 	.border-top {
 		border-top: none;
+	}
+	
+	
+	/* ================= Unplugged Page =================*/
+	.unplugged-header {
+		margin: 40px 100px
+	}
+	
+	.info {
+	margin: 0 100px;
 	}
 	
 }
